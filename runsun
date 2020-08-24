@@ -1,0 +1,38 @@
+
+set terminal wxt background 'black'
+
+set xrange[-100:100]
+set yrange[-55:55]
+
+set polar
+unset key
+unset tics
+
+unset border
+
+unset raxis
+set angles degrees 
+
+
+
+set palette rgb 21,22,23
+
+unset colorbox
+
+
+do for [ii=1:4001] {
+     
+     
+     set multiplot layout 1,1
+     
+     
+     plot 'sun.dat' using 4:3:2 every ::1::ii w p pt 7 ps 0.8 lc rgb "yellow"
+  
+    
+    
+     unset multiplot
+     
+     pause 0.1
+}
+     
+     
