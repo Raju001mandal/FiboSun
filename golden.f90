@@ -1,4 +1,4 @@
-program projectile_motion
+program Sunflower
 implicit none
 
 integer::i,n
